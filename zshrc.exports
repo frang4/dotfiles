@@ -1,0 +1,21 @@
+export PATH=$PATH:/home/$USER/go/bin/
+export PATH=$PATH:/home/$USER/.local/bin/
+
+# Set PATH to use asdf
+export ASDF_DATA_DIR="${ASDF_DATA_DIR:-$HOME/.asdf}"
+path=("$ASDF_DATA_DIR/bin" $path)
+
+export ROCKYOU=/usr/share/wordlists/rockyou.txt
+
+export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/node@22/include"
+export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/node@22/lib"
+export PATH="/home/linuxbrew/.linuxbrew/opt/node@22/bin:$PATH"
+
+FNM_PATH="/home/frang4/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "`fnm env`"
+fi
+
+# IMPORTANT Always at last
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH

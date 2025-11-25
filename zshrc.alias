@@ -1,0 +1,12 @@
+alias g=git
+alias gst="git status"
+alias s=ssh
+alias t=terragrunt
+alias tp="terragrunt plan"
+alias ta="terragrunt apply"
+alias taa="terragrunt apply -auto-approve"
+alias tf="terraform"
+alias tfp="terraform plan"
+alias tfa="terraform apply"
+alias tfaa="terraform apply -auto-approve"
+alias copy="xclip -selection clipboard"

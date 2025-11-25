@@ -1,14 +1,20 @@
-# Set PATH to use asdf
-export ASDF_DATA_DIR="${ASDF_DATA_DIR:-$HOME/.asdf}"
-path=("$ASDF_DATA_DIR/bin" $path)
-
+# Load exports
+[[ -f ~/.zshrc.exports ]] && source ~/.zshrc.exports
 
 # Load personalizations
 [[ -f ~/.zshrc.default ]] && source ~/.zshrc.default
 
+# Load Other User personalizations
+[ -f ~/.zshrc.user ] && source ~/.zshrc.user
+
+[ -f ~/.zshrc.alias ] && source ~/.zshrc.alias
+
 # Ensure tmux accepts UTF8
 alias tmux="tmux -u"
+# Load Other User personalizations
+[ -f ~/.zshrc.user ] && source ~/.zshrc.user
 
+[ -f ~/.zshrc.alias ] && source ~/.zshrc.alias
 # SSH alias with s
 alias s=ssh
 
@@ -60,9 +66,6 @@ fpath=($HOME/.zsh/completion $fpath)
 
 
 [[ -f ~/.zshrc.default.updates ]] && source ~/.zshrc.default.updates
-
-# Load Other User personalizations
-[ -f ~/.zshrc.user ] && source ~/.zshrc.user
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
