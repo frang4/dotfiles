@@ -14,7 +14,6 @@ alias tmux="tmux -u"
 # Load Other User personalizations
 [ -f ~/.zshrc.user ] && source ~/.zshrc.user
 
-[ -f ~/.zshrc.alias ] && source ~/.zshrc.alias
 # SSH alias with s
 alias s=ssh
 
