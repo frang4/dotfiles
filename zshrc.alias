@@ -12,3 +12,5 @@ alias tfaa="terraform apply -auto-approve"
 alias copy="xclip -selection clipboard"
 alias tmux="tmux -u"
 alias s=ssh
+alias hip="hostname -I | awk '{printf \$3}'"
+
