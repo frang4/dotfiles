@@ -10,3 +10,5 @@ alias tfp="terraform plan"
 alias tfa="terraform apply"
 alias tfaa="terraform apply -auto-approve"
 alias copy="xclip -selection clipboard"
+alias tmux="tmux -u"
+alias s=ssh

@@ -40,3 +40,6 @@
 	clean = git-lfs clean -- %f
 [credential]
 	helper = cache --timeout=3600
+[user]
+	email = franciscogaray@live.com.ar
+	name = frang4
