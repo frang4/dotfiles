@@ -1,5 +1,6 @@
 export PATH=$PATH:/home/$USER/go/bin/
 export PATH=$PATH:/home/$USER/.local/bin/
+export PATH=$PATH:/home/kali/.cargo/bin
 
 # Set PATH to use asdf
 export ASDF_DATA_DIR="${ASDF_DATA_DIR:-$HOME/.asdf}"
